@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    h1 {
+      font-size: 16px;
+      margin-bottom: 16px;
+      color: #333;
+    }
+    .field {
+      margin-bottom: 12px;
+    }
+    label {
+      display: block;
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 4px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 13px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #07C160;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+    button:hover {
+      background: #06AD56;
+    }
+    .help {
+      margin-top: 16px;
+      font-size: 11px;
+      color: #999;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <h1>📄 WeChat 文章转 PDF</h1>
+  
+  <div class="field">
+    <label>接收邮箱（可选）</label>
+    <input type="email" id="email" placeholder="your@email.com">
+  </div>
+  
+  <button id="save">保存设置</button>
+  
+  <div class="help">
+    💡 提示：不配置邮箱也能使用「本地下载」功能。如需邮件发送，需要配置 OpenClaw Agent 后端。
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
